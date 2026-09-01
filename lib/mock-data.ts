@@ -9,7 +9,7 @@ export const aboutData = {
     "Passionate developer yang membangun solusi digital inovatif dengan teknologi modern. Berpengalaman di React, Next.js, Node.js, dan cloud platforms.",
   bioFull:
     "Saya adalah seorang Full Stack Developer dengan passion besar terhadap pengembangan web modern. Dengan pengalaman lebih dari 3 tahun, saya telah membangun berbagai macam proyek mulai dari landing page interaktif hingga aplikasi enterprise yang kompleks.\n\nKeahlian utama saya meliputi ekosistem JavaScript/TypeScript, termasuk React, Next.js, Node.js, dan Express.js. Saya juga familiar dengan teknologi cloud seperti AWS, Vercel, dan Supabase.\n\nSaya percaya bahwa kode yang baik bukan hanya tentang fungsionalitas, tetapi juga tentang pengalaman pengguna yang luar biasa, performa yang optimal, dan desain yang memukau.",
-  photoUrl: "/images/profile.jpg",
+  photoUrl: "/profile.avif",
   resumeUrl: "/resume.pdf",
   location: "Palembang, Indonesia",
   tagline: "Building the future, one line of code at a time.",

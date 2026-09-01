@@ -18,7 +18,7 @@ import * as THREE from 'three';
 
 const cardGLB = '/assets/lanyard/card.glb';
 const lanyardPng = '/assets/lanyard/lanyard.png';
-const profilPng = '/profil.png';
+const profileAvif = '/profile.avif';
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 
@@ -57,8 +57,8 @@ export default function Lanyard({
   gravity = [0, -40, 0],
   fov = 20,
   transparent = true,
-  frontImage = profilPng,
-  backImage = profilPng,
+  frontImage = profileAvif,
+  backImage = profileAvif,
   imageFit = 'cover',
   lanyardImage = null,
   lanyardWidth = 1.5,
@@ -163,8 +163,8 @@ function Band({
   maxSpeed = 50,
   minSpeed = 0,
   isMobile = false,
-  frontImage = profilPng,
-  backImage = profilPng,
+  frontImage = profileAvif,
+  backImage = profileAvif,
   imageFit = 'cover',
   lanyardImage = null,
   lanyardWidth = 1
