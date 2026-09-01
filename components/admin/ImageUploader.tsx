@@ -177,7 +177,7 @@ export function ImageUploader({
             const isImageUrl = (url?: string) => {
               if (!url) return false;
               return (
-                url.match(/\.(jpeg|jpg|gif|png|webp|svg)/i) != null ||
+                url.match(/\.(jpeg|jpg|gif|png|webp|svg|avif|afif)/i) != null ||
                 url.includes("/storage/v1/object/public/")
               );
             };
@@ -239,7 +239,7 @@ export function ImageUploader({
                   {accept.includes("pdf") ? "Unggah PDF" : "Unggah Gambar"}
                 </p>
                 <p className="text-[9px] text-muted-foreground mt-0.5">
-                  {accept.includes("pdf") ? "PDF s.d. 15MB" : "PNG, JPG, WebP s.d. 15MB"}
+                  {accept.includes("pdf") ? "PDF s.d. 15MB" : "PNG, JPG, WebP, AVIF s.d. 15MB"}
                 </p>
               </div>
             </>

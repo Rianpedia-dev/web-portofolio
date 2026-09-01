@@ -428,7 +428,7 @@ export default function ManageAchievementsPage() {
                       const isImageUrl = (url?: string) => {
                         if (!url) return false;
                         return (
-                          url.match(/\.(jpeg|jpg|gif|png|webp|svg)/i) != null ||
+                          url.match(/\.(jpeg|jpg|gif|png|webp|svg|avif|afif)/i) != null ||
                           url.includes("/storage/v1/object/public/")
                         );
                       };

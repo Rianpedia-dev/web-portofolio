@@ -3,15 +3,22 @@ import { supabase } from "../config/supabase";
 export class UploadService {
   static async uploadFile(bucket: string, file: Express.Multer.File, folderPath: string = "") {
     // Sanitize and generate unique filename
-    const fileExt = file.originalname.split(".").pop();
+    const fileExt = file.originalname.split(".").pop()?.toLowerCase();
     const fileName = `${Date.now()}-${Math.random().toString(36).substring(2, 9)}.${fileExt}`;
     const filePath = folderPath ? `${folderPath}/${fileName}` : fileName;
+
+    let contentType = file.mimetype;
+    if (fileExt === "avif" || fileExt === "afif") {
+      if (!contentType || contentType === "application/octet-stream") {
+        contentType = "image/avif";
+      }
+    }
 
     // Upload using Supabase storage client
     const { data, error } = await supabase.storage
       .from(bucket)
       .upload(filePath, file.buffer, {
-        contentType: file.mimetype,
+        contentType,
         upsert: true,
       });
 

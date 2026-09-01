@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
     position: "top-right",
   },
   images: {
+    formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
         protocol: "https",
