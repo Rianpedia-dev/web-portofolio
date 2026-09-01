@@ -18,7 +18,7 @@ VALUES (
 Keahlian utama saya meliputi ekosistem JavaScript/TypeScript, termasuk React, Next.js, Node.js, dan Express.js. Saya juga familiar dengan teknologi cloud seperti AWS, Vercel, dan Supabase.
 
 Saya percaya bahwa kode yang baik bukan hanya tentang fungsionalitas, tetapi juga tentang pengalaman pengguna yang luar biasa, performa yang optimal, dan desain yang memukau.',
-  '/images/profile.jpg',
+  '/profile.avif',
   '/resume.pdf',
   'Palembang, Indonesia',
   '1998-05-15',

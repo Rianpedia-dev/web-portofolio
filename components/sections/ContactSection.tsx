@@ -182,7 +182,7 @@ export function ContactSection({ socialLinks }: ContactSectionProps) {
               handle="jemiarian"
               status="Online"
               contactText="Hubungi Saya"
-              avatarUrl="/images/profile.jpg"
+              avatarUrl="/profile.avif"
               showUserInfo={false}
               enableTilt={true}
               enableMobileTilt={false}
