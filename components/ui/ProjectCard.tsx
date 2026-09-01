@@ -2,7 +2,7 @@
 
 import { useRef, useState, useCallback, useEffect } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ExternalLink, Github, ArrowRight, Layers } from "lucide-react";
+import { ExternalLink, ArrowRight, Layers } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -224,19 +224,6 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
                     >
                       <ExternalLink className="h-3.5 w-3.5 group-hover/link:rotate-12 transition-transform" />
                       <span className="hidden sm:inline">LIVE</span>
-                    </motion.a>
-                  )}
-
-                  {project.githubUrl && (
-                    <motion.a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-[11px] sm:text-xs font-heading font-bold tracking-wide text-muted-foreground hover:text-foreground transition-colors group/gh p-1"
-                      whileHover={{ x: 2 }}
-                    >
-                      <Github className="h-3.5 w-3.5 group-hover/gh:rotate-12 transition-transform" />
-                      <span className="hidden sm:inline">CODE</span>
                     </motion.a>
                   )}
 

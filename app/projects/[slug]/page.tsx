@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { GlowButton } from "@/components/ui/GlowButton";
 import { projectsData } from "@/lib/mock-data";
-import { ExternalLink, Github, ArrowLeft, Calendar, Info, Code, ChevronLeft, ChevronRight, Layers } from "lucide-react";
+import { ExternalLink, ArrowLeft, Calendar, Info, Code, ChevronLeft, ChevronRight, Layers } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { publicApi } from "@/lib/api";
@@ -192,8 +192,8 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                 </div>
 
                 {/* Direct Action URLs */}
-                <div className="flex flex-col gap-2 pt-2">
-                  {project.liveUrl && (
+                {project.liveUrl && (
+                  <div className="flex flex-col gap-2 pt-2">
                     <a
                       href={project.liveUrl}
                       target="_blank"
@@ -205,22 +205,8 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                         <span>KUNJUNGI WEBSITE</span>
                       </GlowButton>
                     </a>
-                  )}
-
-                  {project.githubUrl && (
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full block"
-                    >
-                      <GlowButton variant="secondary" size="sm" className="w-full flex justify-center items-center gap-1.5 border-border/50">
-                        <Github className="h-3.5 w-3.5" />
-                        <span>REPOSITORI GITHUB</span>
-                      </GlowButton>
-                    </a>
-                  )}
-                </div>
+                  </div>
+                )}
               </GlassCard>
             </div>
           </div>
